@@ -17,6 +17,8 @@ import { AppComponent } from './app.component';
 import { FormalyComponent } from './formaly/formaly.component';
 import { CustomInputComponent } from './custom-input/custom-input.component';
 import { TranslationService } from './translation.service';
+import { FormlyJsonComponent } from './formly-json/formly-json.component';
+import { FormlySchemaComponent } from './formly-schema/formly-schema.component';
 
 // validation (custom validation msgs)
 export function minValidatiomMsg(err: any, field: FormlyFieldConfig) {
@@ -33,7 +35,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 @NgModule({
-  declarations: [AppComponent, FormalyComponent, CustomInputComponent],
+  declarations: [AppComponent, FormalyComponent, CustomInputComponent, FormlyJsonComponent, FormlySchemaComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

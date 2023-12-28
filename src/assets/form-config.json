@@ -1,0 +1,27 @@
+[
+  {
+    "key": "firstName",
+    "type": "input",
+    "templateOptions": {
+      "label": "First Name",
+      "required": true
+    }
+  },
+  {
+    "key": "lastName",
+    "type": "input",
+    "templateOptions": {
+      "label": "Last Name",
+      "required": true
+    }
+  },
+  {
+    "key": "email",
+    "type": "input",
+    "templateOptions": {
+      "label": "Email",
+      "required": true,
+      "type": "email"
+    }
+  }
+]
