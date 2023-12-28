@@ -1,5 +1,5 @@
 <div class="row mt-5">
-  <div class="col-4">
+  <div class="col-8">
     <div class="form-component">
       <form [formGroup]="form" (ngSubmit)="onSubmit(form)">
         <formly-form
@@ -7,22 +7,26 @@
           [fields]="fields"
           [model]="model"
         ></formly-form>
-        <button type="submit" [disabled]="!form.valid" class="btn btn-primary">
+        <button
+          type="submit"
+          [disabled]="!form.valid"
+          class="btn btn-primary mt-3"
+        >
           Submit
         </button>
       </form>
     </div>
   </div>
-  <div class="col-8">
+  <div class="col-4">
     <div class="row">
-      <div class="col-6">
+      <div class="col-12">
         <h5>form</h5>
         <pre class="border text-start p-3">
             {{ form.value | json }}
     </pre
         >
       </div>
-      <div class="col-6">
+      <div class="col-12">
         <h5>model</h5>
         <pre class="border text-start p-3">
             {{ model | json }}

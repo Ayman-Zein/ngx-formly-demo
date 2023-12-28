@@ -5,6 +5,7 @@ import { FieldType, FieldTypeConfig } from '@ngx-formly/core';
   selector: 'formly-field-input',
   template: `
     <div class="form-group">
+      <label class="mb-2">{{ props.label }}</label>
       <input
         [formControl]="formControl"
         [placeholder]="props.placeholder"
@@ -16,7 +17,7 @@ import { FieldType, FieldTypeConfig } from '@ngx-formly/core';
   styles: [
     `
       input {
-        padding: 8px;
+        padding: 6px 8px;
         border: 1px solid blue;
         border-radius: 4px;
         width: 100%;
